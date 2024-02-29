@@ -1,0 +1,7 @@
+telebot
+numpy
+nltk
+pandas
+matplotlib
+tabulate
+prettytable       
