@@ -27,6 +27,7 @@ matplotlib.use('Agg')
 # Establecer el tiempo de espera de la API en 30 segundos
 apihelper.READ_TIMEOUT = 30
 # Creación del bot
+# Token obtenido desde BotFather
 bot = telebot.TeleBot('TU_TOKEN')
 
 
