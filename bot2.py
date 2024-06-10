@@ -27,7 +27,7 @@ matplotlib.use('Agg')
 # Establecer el tiempo de espera de la API en 30 segundos
 apihelper.READ_TIMEOUT = 30
 # Creación del bot
-bot = telebot.TeleBot('5845836818:AAF4iGHTM4HdMUGeEjo62fpMf-bcQfhi8nQ')
+bot = telebot.TeleBot('TU_TOKEN')
 
 
 @bot.message_handler(commands=["start"])
@@ -36,7 +36,7 @@ def cmd_start(message):
     bot.send_chat_action(message.chat.id, "typing")
     bot.reply_to(
         message,
-        f"¡Hola, {username}! ¡Bienvenido a StatBotix! Soy tu Asistente Virtual para el área de la Estadística Descriptiva. Mi objetivo es ayudarte en lo relacionado con conceptos básicos, cálculos y gráficos estadísticos."
+        f"¡Hola, {username}! ¡Bienvenido a StaBotix! Soy tu Asistente Virtual para el área de la Estadística Descriptiva. Mi objetivo es ayudarte en lo relacionado con conceptos básicos, cálculos y gráficos estadísticos."
     )
 @bot.message_handler(commands=["help"])
 def cmd_start(message):
@@ -44,7 +44,7 @@ def cmd_start(message):
     bot.send_chat_action(message.chat.id, "typing")
     bot.reply_to(
         message,
-        f"¡Hola, {username}! Soy StatBotix tu asistente de estadísticas. Aquí están los comandos que puedes usar:\n- /start: Inicia una nueva sesión con el bot.\n- /help: Muestra este mensaje de ayuda.\n Además de estos comandos, puedes interactuar conmigo usando lenguaje natural. Por ejemplo, puedes preguntarme ¿Cuál es la media de estos números: 1, 2, 3, 4, 5? o Calcula la desviación estándar de 1, 2, 3, 4, 5.\nEs importante saber que a la hora de realizar la solicitud, los únicos números, deben ser los datos, el resto de la solicitud no debe contener números para obtener un mejor resultado.\nEstoy aquí para ayudarte con tus necesidades de estadísticas. Si tienes alguna pregunta o necesitas más ayuda, no dudes en preguntar."
+        f"¡Bienvenido, {username}! Aquí están los comandos que puedes usar:\n- /start: Inicia una nueva sesión con el bot.\n- /help: Muestra este mensaje de ayuda.\n Además de estos comandos, puedes interactuar conmigo usando lenguaje natural. Por ejemplo, puedes preguntarme ¿Cuál es la media de estos números: 1, 2, 3, 4, 5? o Calcula la desviación estándar de 1, 2, 3, 4, 5.\nEs importante saber que a la hora de realizar la solicitud, los únicos números, deben ser los datos, el resto de la solicitud no debe contener números para obtener un mejor resultado.\nEstoy aquí para ayudarte con tus necesidades de estadísticas. Si tienes alguna pregunta o necesitas más ayuda, no dudes en preguntar."
     )
 
 # Función para manejar los mensajes de texto
